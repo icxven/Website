@@ -41,7 +41,7 @@ img {
   border-radius: 10px;
 }
 
-a {
+a, p {
   font-family: 'Inter', sans-serif;
   text-decoration: none;
   color: grey;
