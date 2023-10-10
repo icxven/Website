@@ -28,7 +28,8 @@ img {
 }
 
 .bigcontainer {
-  border: dotted;
+  border: dashed;
+  border-width: 2px;
   color: grey;
   border-radius: 10px;
 }
