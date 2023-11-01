@@ -14,7 +14,7 @@
 
 //==[ 1. BASIC INFO ]==
 
-let blogName = ":Void:";
+let blogName = ":novoid00:";
 let authorName = "nethsara";
 let authorLink = "https://t.me/icxven"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
 
@@ -39,6 +39,17 @@ let postsArray = [
 [ "posts/2023-04-04-You-&-You.html" ]
 ];
 
+
+let lasUpdated = new Date('11/01/2023');
+let today = new Date();
+
+const days = (date_1, date_2) =>{
+    let difference = date_1.getTime() - date_2.getTime();
+    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+    return TotalDays;
+}
+
+let updateInterval = days(today, lasUpdated);
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 /*CAUTION!! BEGINNING OF MORE ADVANCED SECTION!
@@ -67,7 +78,7 @@ let headerHTML = '<ul> <li><a href="' + relativePath + '/index.html">Home</a></l
 
 //Generate the Footer HTML, which uses the variables defined in the BASIC INFO section above to list info about the site.
 //Note: feel free to remove the references to Zonelets and Neocities! Just be careful not to delete any necessary HTML closing tags or other syntax.
-let footerHTML = "<hr><p>" + blogName + " is written by <a href='" + authorLink + "'>" + authorName + "</a>, built with <a href='https://zonelets.net/'>Zonelets</a>, and hosted on <a href='https://vercel.com/'>vercel</a></p>";
+let footerHTML = "<hr><p>" + blogName + " || last update was before " + updateInterval + " days ଘ(੭ˊᵕˋ)੭</p></hr>";
 
 //To do the following stuff, we want to know where we are in the posts array (if we're currently on a post page).
 let currentIndex = -1;

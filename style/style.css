@@ -56,7 +56,6 @@ a:hover {
 /* memes page */
 .meme {
   max-width: 260px;
-  pointer-events: none;
   outline-style: solid;
   outline-color: black;
   outline-offset: 0;
