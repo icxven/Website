@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const footerContainer = document.getElementById("footer-spotify");
     try {
-      const response = await fetch("https://z.nethsara.cyou/api/current");
+      const response = await fetch("https://spotifycurrent.vercel.app/api/current");
       const spotifyjsonObject = await response.json();
       console.log(spotifyjsonObject);
       if (spotifyjsonObject.status == '200') {
