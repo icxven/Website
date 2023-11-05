@@ -1,39 +1,20 @@
-/*Welcome to the script file! Your 1st time here, you should update
-  the BASIC INFO section to include your name and website/social 
-  media link (if desired). Most of the time, you will just come
-  here to update the POSTS ARRAY. However, you can also edit or
-  add your own scripts to do whatever you like!*/
-
-//TABLE OF CONTENTS
-  // 1. Basic Info
-  // 2. Posts Array
-  // 3. Creating HTML Sections to Be Inserted (Header, Footer, etc)
-  // 4. Inserting the Sections Into our Actual HTML Pages
-
-//-----------------------------
-
-//==[ 1. BASIC INFO ]==
+// ==[ 1. BASIC INFO ]==
 
 let blogName = ":novoid00:";
 let authorName = "nethsara";
-let authorLink = "https://t.me/icxven"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
+let authorLink = "https://t.me/icxven"; 
 
-//-----------------------------
-
-//==[ 2. POSTS ARRAY ]==
+// ==[ 2. POSTS ARRAY ]==
 
 /*Each time you make a new post, add the filepath here at the top of postsArray.
   This will cause all the right links to appear and work.
   NOTE: It's important to follow this exact naming convention, because the scripts
   below are expecting it ( 'posts/YYYY-MM-DD-Title-of-Your-Post.html', ). You can
   alter the scripts if you want to use a different naming convention*/
-/*UPDATE: as of version 1.3, you may omit the date if you would like. But if you
+/*UkPDATE: as of version 1.3, you may omit the date if you would like. But if you
   use a date it must still follow that format.*/
 
 let postsArray = [
-//[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
-//[ "posts/2020-11-10-My-Third-Post-Example.html" ],
-//[ "posts/2020-11-10-My-Second-Post-Example.html" ],
 [ "posts/2023-07-02-Unveiling-Mysteries-&-Reality.html"],
 [ "posts/2023-05-05-Thus,-I-Wanna-Unlearn-Myself.html" ],
 [ "posts/2023-04-04-You-&-You.html" ]
@@ -74,11 +55,11 @@ if ( url.includes("posts/") ) {
 }
 
 //Generate the Header HTML, a series of list items containing links.
-let headerHTML = '<ul> <li><a href="' + relativePath + '/index.html">Home</a></li>' + '<li><a href="' + relativePath + '/archive.html">Archive</a></li>' + '<li><a href="' + relativePath + '/about.html">About</a></li>' + '<li><a href="' + relativePath + '/memes.html">Memes</a></li> </ul>';
+let headerHTML = '<ul> <li><a href="' + relativePath + '/index.html">Home</a></li>' + '<li><a href="' + relativePath + '/posts.html">Posts</a></li>' + '<li><a href="' + relativePath + '/about.html">About</a></li>' + '<li><a href="' + relativePath + '/memes.html">Memes</a></li> </ul>';
 
 //Generate the Footer HTML, which uses the variables defined in the BASIC INFO section above to list info about the site.
 //Note: feel free to remove the references to Zonelets and Neocities! Just be careful not to delete any necessary HTML closing tags or other syntax.
-let footerHTML = "<hr><p>" + blogName + " || last update was before " + updateInterval + " days ଘ(੭ˊᵕˋ)੭</p></hr>";
+let footerHTML = "<hr><p><div id='footer-spotify'></div>" + blogName + " || last update was before " + updateInterval + " days ଘ(੭ˊᵕˋ)੭</p></hr>";
 
 //To do the following stuff, we want to know where we are in the posts array (if we're currently on a post page).
 let currentIndex = -1;
