@@ -1,15 +1,11 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    const footerContainer = document.getElementById("footer-spotify");
+    const footerContainer = document.querySelector("#footer-spotify");
     try {
       const response = await fetch("https://spotifycurrent.vercel.app/api/current");
       const spotifyjsonObject = await response.json();
-      console.log(spotifyjsonObject);
       if (spotifyjsonObject.status == '200') {
-        spotifyStatus = "Listening to " + spotifyjsonObject.song + " by " + spotifyjsonObject.artist + " ⤹˚˖ ♫ ୭ ";
-        console.log(spotifyStatus);
-        const para = document.createElement("p");
-        para.textContent = spotifyStatus;
-        footerContainer.appendChild(para);
+        let spotifyStatus = "Listening to " + '<b>' + spotifyjsonObject.song + '</b>' + " by " + spotifyjsonObject.artist + " ⤹˚˖ ♫ ୭ <br>";
+        footerContainer.innerHTML = spotifyStatus + footerContainer.innerHTML;
       } else if (spotifyjsonObject.status == '400') {
         console.log("400");
       } else {
