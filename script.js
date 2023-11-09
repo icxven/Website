@@ -155,7 +155,7 @@ for ( let i = 0; i < numberOfRecentPosts; i++ ) {
   then we'll add a link to the archive so readers can find the rest of
   your wonderful posts and be filled with knowledge.*/
 if ( postsArray.length > recentPostsCutoff ) {
-  recentPostListHTML += '<li class="moreposts"><a href=' + relativePath + '/archive.html>\u00BB more posts</a></li></ul>';
+  recentPostListHTML += '<li class="moreposts"><a href=' + relativePath + '/posts.html>\u00BB more posts</a></li></ul>';
 } else {
   recentPostListHTML += "</ul>";
 }
