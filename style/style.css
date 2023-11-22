@@ -167,3 +167,11 @@ a:hover {
   font-size: 0.8em;
   padding: 0 5% 10px 5%;
 }
+
+#contact-info {
+  font-size: 0.8em;
+}
+
+.normal {
+  line-height: 5px;
+}

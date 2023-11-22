@@ -15,7 +15,8 @@ let authorLink = "https://t.me/icxven";
   use a date it must still follow that format.*/
 
 let postsArray = [
-[ "posts/2023-11-08-ALs.html" ],
+[ "posts/2023-11-22-The-WEB-is-Bloated-Enough.html"],
+[ "posts/2023-11-08-AL-'-s.html" ],
 [ "posts/2023-07-02-Unveiling-Mysteries-&-Reality.html"],
 [ "posts/2023-05-05-Thus,-I-Wanna-Unlearn-Myself.html" ],
 [ "posts/2023-04-04-You-&-You.html" ]
