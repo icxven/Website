@@ -2,10 +2,17 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
+::selection {
+  background: #acbce8;
+}
+
 body {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: #ffffff;
+  background-image: radial-gradient(#4b4b4b 0.35000000000000003px, #ffffff 0.35000000000000003px);
+  background-size: 7px 7px;
 }
 
 p {
@@ -63,8 +70,17 @@ th {
   font-style: italic;
 }
 
+a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+a:visited {
+  color: midnightblue;
+}
+
 a:hover { 
-  background-color: #c9f1fe;
+  background-color: #acbce8;
 }
 
 
@@ -102,6 +118,7 @@ a:hover {
   outline-style: solid;
   outline-width: 1px;
   outline-offset: 0;
+  background-color: white;
 }
 
 #content {
@@ -173,5 +190,5 @@ a:hover {
 }
 
 .normal {
-  line-height: 5px;
+  line-height: 18px;
 }
