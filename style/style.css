@@ -125,6 +125,10 @@ a:hover {
   padding: 10px 5% 20px 5%;
 }
 
+.container-programs {
+  display: flex;
+  gap: 10px;
+}
 
 /*HEADER STYLE*/
 #header {
@@ -191,4 +195,10 @@ a:hover {
 
 .normal {
   line-height: 18px;
+}
+
+.programs {
+  max-width: 25px;
+  object-fit: contain;
+  pointer-events: none;
 }

@@ -57,7 +57,7 @@ if ( url.includes("posts/") ) {
 }
 
 //Generate the Header HTML, a series of list items containing links.
-let headerHTML = '<ul> <li><a href="' + relativePath + '/index.html">Home</a></li>' + '<li><a href="' + relativePath + '/posts.html">Posts</a></li>' + '<li><a href="' + relativePath + '/about.html">About</a></li>' + '<li><a href="' + relativePath + '/links.html">Links</a></li>' + '<li><a href="' + relativePath + '/memes.html">Memes</a></li> </ul>';
+let headerHTML = '<ul> <li><a href="' + relativePath + '/index.html">Home</a></li>' + '<li><a href="' + relativePath + '/posts.html">Posts</a></li>' + '<li><a href="' + relativePath + '/about.html">About</a></li>' + '<li><a href="' + relativePath + '/links.html">Links</a></li>' + '<li><a href="' + relativePath + '/programs.html">Programs</a></li>' + '<li><a href="' + relativePath + '/memes.html">Memes</a></li> </ul>';
 
 //Generate the Footer HTML, which uses the variables defined in the BASIC INFO section above to list info about the site.
 //Note: feel free to remove the references to Zonelets and Neocities! Just be careful not to delete any necessary HTML closing tags or other syntax.
