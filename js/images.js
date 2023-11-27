@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const imageContainer = document.getElementById("container-memes");
     try {
-        const response = await fetch("../json/memes.json");
+        const response = await fetch("../json/random.json");
         const fileNames = await response.json();
         const suffledfileNames = fileNames.sort(() => Math.random() - 0.5);
         suffledfileNames.forEach(fileName => {
